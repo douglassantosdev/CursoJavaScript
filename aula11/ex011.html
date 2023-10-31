@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Você é brasileiro?</h1>
+    <p>1 = sim <br> 2 = não</p>
+    <input type="number" id="txtn1">
+    <input type="button" value="Confirmar" id="btbn1" onclick="passaporte()">
+    <div id="naci">
+
+    </div>
+</body>
+<script>
+    function passaporte() {
+    var txt1 = document.getElementById('txtn1')
+    var naci = document.getElementById('naci')
+    var n1 = Number(txt1.value)
+    if (n1 == 1) {
+        naci.innerText = 'Você é brasileiro!'
+    } else {
+        naci.innerText = 'Você é estrangeiro!'
+    }
+}
+</script>
+</html>
